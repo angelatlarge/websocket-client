@@ -95,8 +95,7 @@ if hasattr(socket, "TCP_KEEPINTVL"):
 if hasattr(socket, "TCP_KEEPCNT"):
     DEFAULT_SOCKET_OPTION.append((socket.SOL_TCP, socket.TCP_KEEPCNT, 3))
 
-logger = logging.getLogger()
-
+logger = logging.getLogger(__app__)
 
 
 default_timeout = None
